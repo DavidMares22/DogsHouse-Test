@@ -21,5 +21,26 @@ namespace DogsApi.Tests
             Assert.Equal(new ObjectResult(new { message = "Dogs house service. Version 1.0.1" }).ToString(), actionResult.ToString());
 
         }
+
+
+        [Fact]
+        public void GetPing_ManyTimes_Returns_429()
+        {
+            // Arrange
+            var controller = new PingController();
+             
+            // Act
+            for (int i = 0; i < 8; i++)
+            {
+
+            var actionResult = controller.Get();
+            }
+
+            IActionResult result = controller.Get();
+            //Assert
+
+            Assert.Equal(new ObjectResult(new { message = "429 Too Many Requests" }).ToString(), result.ToString());
+
+        }
     }
 }
