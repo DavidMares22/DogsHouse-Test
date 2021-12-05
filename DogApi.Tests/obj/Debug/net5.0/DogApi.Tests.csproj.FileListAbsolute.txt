@@ -218,3 +218,4 @@ C:\Users\Alex\Desktop\Ok\DogApi.Tests\obj\Debug\net5.0\DogApi.Tests.dll
 C:\Users\Alex\Desktop\Ok\DogApi.Tests\obj\Debug\net5.0\ref\DogApi.Tests.dll
 C:\Users\Alex\Desktop\Ok\DogApi.Tests\obj\Debug\net5.0\DogApi.Tests.pdb
 C:\Users\Alex\Desktop\Ok\DogApi.Tests\obj\Debug\net5.0\DogApi.Tests.genruntimeconfig.cache
+C:\Users\Alex\Desktop\Ok\DogApi.Tests\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll

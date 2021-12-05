@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "10TrQfifNVUdnDiMnz8xDUPQyLZsJcB6Xw5DfnreCgH7KWyTVr42S60gK9KxEFD+TpI8mEbBriBzI7uUj3gjIg==",
+  "dgSpecHash": "GLYhFG1j7b7IHxIR7luCDfEZBUY+sWAV1uOLvgVmdoFibp5N8myaFbD6Pvp24zKNSLde5R4kwvTyffR29/SdCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alex\\Desktop\\Ok\\DogApi.Tests\\DogApi.Tests.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.12\\microsoft.entityframeworkcore.5.0.12.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.12\\microsoft.entityframeworkcore.abstractions.5.0.12.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.12\\microsoft.entityframeworkcore.analyzers.5.0.12.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.0\\microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.12\\microsoft.entityframeworkcore.relational.5.0.12.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.12\\microsoft.entityframeworkcore.sqlserver.5.0.12.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
