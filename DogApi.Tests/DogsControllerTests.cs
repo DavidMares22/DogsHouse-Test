@@ -95,6 +95,66 @@ namespace DogsApi.Tests
 
             }
 
+        } 
+        
+        [Fact]
+        public async Task GetDogs_Id_asc_returns_1()
+        {
+            // If i call the GetDogs method, should return dogs in asc order according to the Id attribute
+            // the first element would be the one with Id of 1
+
+            var options = new DbContextOptionsBuilder<ApiDbContext>()
+           .UseInMemoryDatabase(databaseName: "DogsDb")
+           .Options;
+
+
+            using (var _dbContext = new ApiDbContext(options))
+            {
+                var controller = new DogsController(_dbContext, _mapper);
+                var result = (await controller.GetDogs(1, 10, "Id", "asc")) as OkObjectResult;
+
+                Assert.NotNull(result);
+                IEnumerable<Dog> dogs = result.Value as IEnumerable<Dog>;
+
+                var enumerator = dogs.GetEnumerator();
+                enumerator.MoveNext();
+
+                Assert.Equal(1, enumerator.Current.Id);
+
+            }
+
         }
+
+
+
+        [Fact]
+        public async Task Post_dog_returnsStatus_201()
+        {
+             
+
+            var options = new DbContextOptionsBuilder<ApiDbContext>()
+           .UseInMemoryDatabase(databaseName: "DogsDb")
+           .Options;
+
+
+            using (var _dbContext = new ApiDbContext(options))
+            {
+                var controller = new DogsController(_dbContext, _mapper);
+                var result = (await controller.Post(new CreateDog
+                {                    
+                    Name = "Test",
+                    Color = "black",
+                    Tail_length = 28,
+                    Weight = 37
+                }) as StatusCodeResult);
+
+                Assert.Equal("201",result.StatusCode.ToString());
+                 
+
+            }
+
+        }
+
+
     }
 }
