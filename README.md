@@ -6,6 +6,9 @@
   <p align="center">
    the first repo i was working on only has <a href="https://www.github.com/DavidMares22/DogApi">the DogHouse Api</a> 
   </p>
+   <p align="center">
+   You can change the rate limit in the ServiceExtensions file. 
+  </p>
 </p>
 
 
@@ -20,7 +23,9 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#screenshots">Screenshots</a>
+    </li>
     
   </ol>
 </details>
@@ -38,5 +43,21 @@ To get a local copy up and running follow these simple steps.
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- SCREENSHOTS -->
+## Screenshots
+
+
+Endpoints for the webservice on Swagger
+[![name](https://raw.githubusercontent.com/DavidMares22/DogsHouse-Test/main/Screenshots/index.JPG)] 
+
+Response for GetDogs action
+[![name](https://raw.githubusercontent.com/DavidMares22/DogsHouse-Test/main/Screenshots/responseOfget.JPG)] 
+
+Response for GetPing action
+[![name](https://raw.githubusercontent.com/DavidMares22/DogsHouse-Test/main/Screenshots/responseOfping.JPG)] 
+
+Error for PostDog action if Name exists
+[![name](https://raw.githubusercontent.com/DavidMares22/DogsHouse-Test/main/Screenshots/duplicateName.JPG)] 
+
+Error for exiding the rate limit
+[![name](https://raw.githubusercontent.com/DavidMares22/DogsHouse-Test/main/Screenshots/429error.JPG)] 
